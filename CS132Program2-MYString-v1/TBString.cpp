@@ -84,8 +84,15 @@ bool TBString::lessThan(const TBString& argStr)
 
 bool TBString::greaterThan(const TBString& argStr) 
 {
-	//TODO: you need to write.
-	return false;
+	int result = compareTo(this->str, argStr.str);
+	if (result == 1)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 bool TBString::equals(const TBString& argStr) 
