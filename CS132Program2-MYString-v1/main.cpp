@@ -60,7 +60,14 @@ int main()
 
     // OUTPUT
 
-    
+    for (int i = 0; i < wordCnt; i++)
+    {
+        cout << left << setw(13) << words[i].c_str();
+        if ((i + 1) % 6 == 0)
+        {
+            cout << endl;
+        }
+    }
 
     // OS independent program termination sequence. 
 #ifdef _WIN32
