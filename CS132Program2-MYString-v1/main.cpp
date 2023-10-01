@@ -48,16 +48,19 @@ int main()
         notDone = false;
         for (int i = 0; i < wordCnt - 1; i++)
         {
-
+            if (words[i].greaterThan(words[i + 1]))
+            {
+                TBString tempStr = words[i];
+                words[i] = words[i + 1];
+                words[i + 1] = tempStr;
+                notDone = true;
+            }
         }
-            //loop through the elements of the array starting with first index
-            //compare two elements to see if they are in proper order, if not in order than swamp them, mark notDone = true
-            //increment your index so you can check the next two
     }
 
     // OUTPUT
 
-
+    
 
     // OS independent program termination sequence. 
 #ifdef _WIN32
