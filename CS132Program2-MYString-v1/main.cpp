@@ -82,6 +82,28 @@ int main()
 }
 
 
+/*
+
+Output to console:
+
+brain        myself       within       what         felt         thing
+to           seemed       began        they         could        a
+was          I            sit          ruling,      much         amazingly
+as           a            man's        I            impossible.  ask
+busy.        They         intelligent  they         Were         Such
+Or           a            mechanisms?  Martian      each,        directing,
+be.          using,       did          in           ask          sits
+myself       machines,    first        an           engine       and
+to           compare      the          to           life         ironclad
+time         steam        would        lower        the          my
+an           intelligent  body?        began        for          or
+I            seem         rules        how          to           a
+his          human        things       in           to           animal.
+
+Press any key to continue . . .
+
+*/
+
 
 /*
 
