@@ -7,6 +7,8 @@
 //                  according to ASCII encoding. 
 ////
 
+// main.cpp
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -32,7 +34,7 @@ int main()
     int wordCnt = 0;
     for (; words[wordCnt].read(fin); ++wordCnt) 
     {       // empty loop
-        // cout << words[wordCnt].c_str() << '\t';      // for verifying input
+            // cout << words[wordCnt].c_str() << '\t';      // for verifying input
     }
     words.resize(wordCnt);            //shrink vector to size used
 
@@ -40,9 +42,21 @@ int main()
 
     // SORT
 
+    bool notDone = true;
+    while (notDone == true)
+    {
+        notDone = false;
+        for (int i = 0; i < wordCnt - 1; i++)
+        {
 
+        }
+            //loop through the elements of the array starting with first index
+            //compare two elements to see if they are in proper order, if not in order than swamp them, mark notDone = true
+            //increment your index so you can check the next two
+    }
 
     // OUTPUT
+
 
 
     // OS independent program termination sequence. 

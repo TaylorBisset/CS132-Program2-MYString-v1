@@ -1,4 +1,5 @@
 #ifndef TBSTRING_H
+// TBString.h
 #define TBSTRING_H
 
 #include <istream>
