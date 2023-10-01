@@ -1,13 +1,13 @@
-#include "MYString.h"
+#include "TBString.h"
 
-MYString::MYString() {
+TBString::TBString() {
 	cap = 20;
 	end = 0;
 	str = new char[cap];
 	str[end] = '\0';
 }
 
-MYString::MYString(const char* cstr) {
+TBString::TBString(const char* cstr) {
 	for (end = 0; cstr[end] != '\0'; ++end);
 	//empty loop
 
@@ -19,15 +19,15 @@ MYString::MYString(const char* cstr) {
 	}
 }
 
-int MYString::length() {
+int TBString::length() {
 	return end;
 }
 
-int MYString::capacity() {
+int TBString::capacity() {
 	return cap;
 }
 
-char MYString::at(int index) {
+char TBString::at(int index) {
 	if (index >= 0 && index < end) {
 		return str[index];
 	}
@@ -36,7 +36,7 @@ char MYString::at(int index) {
 	}
 }
 
-bool MYString::read(istream& inputStrm) {
+bool TBString::read(istream& inputStrm) {
 	char inputWord[100];
 	if (inputStrm >> inputWord) {
 		for (end = 0; inputWord[end] != '\0'; ++end);  			//empty loop
@@ -52,27 +52,27 @@ bool MYString::read(istream& inputStrm) {
 		return false;
 }
 
-void MYString::write(ostream& outputStrm) {
+void TBString::write(ostream& outputStrm) {
 	outputStrm << str;
 }
 
-bool MYString::lessThan(const MYString& argStr) {
+bool TBString::lessThan(const TBString& argStr) {
 	// TODO: you need to write.
 	return false;
 }
 
-bool MYString::greaterThan(const MYString& argStr) {
+bool TBString::greaterThan(const TBString& argStr) {
 	//TODO: you need to write.
 	return false;
 }
 
-bool MYString::equals(const MYString& argStr) {
+bool TBString::equals(const TBString& argStr) {
 	//TODO: you need to write.
 	return false;
 }
 
 
-void MYString::setEqualTo(const MYString& argStr) {
+void TBString::setEqualTo(const TBString& argStr) {
 	end = argStr.end;
 
 	// cap = ??;						//TODO: needs to potentially grow for prog3
@@ -82,6 +82,6 @@ void MYString::setEqualTo(const MYString& argStr) {
 	}
 }
 
-const char* MYString::c_str() {
+const char* TBString::c_str() {
 	return str;
 }

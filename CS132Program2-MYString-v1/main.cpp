@@ -1,7 +1,7 @@
 ////
 // Name:            Taylor Bisset
 // Section:         A
-// Program Name:    MYString Tester 
+// Program Name:    TBString Tester 
 //
 // Description:     Sort strings form smallest to largest 
 //                  according to ASCII encoding. 
@@ -11,13 +11,13 @@
 #include <fstream>
 #include <vector>
 #include <iomanip>
-#include "MYString.h"
+#include "TBString.h"
 
 using namespace std;
 
 int main() {
 
-    vector<MYString> words(100);        // calls default constructor 100 times
+    vector<TBString> words(100);        // calls default constructor 100 times
     ifstream fin("infile2.txt");
 
     // READ
