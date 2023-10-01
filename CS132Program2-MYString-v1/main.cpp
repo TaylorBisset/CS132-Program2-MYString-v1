@@ -15,20 +15,23 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
 
     vector<TBString> words(100);        // calls default constructor 100 times
     ifstream fin("infile2.txt");
 
     // READ
-    if (fin.fail()) {
+    if (fin.fail()) 
+    {
         cout << "Couldn't open infile2.txt" << endl;
         system("pause");
         exit(1);
     }
 
     int wordCnt = 0;
-    for (; words[wordCnt].read(fin); ++wordCnt) {       // empty loop
+    for (; words[wordCnt].read(fin); ++wordCnt) 
+    {       // empty loop
         // cout << words[wordCnt].c_str() << '\t';      // for verifying input
     }
     words.resize(wordCnt);            //shrink vector to size used
