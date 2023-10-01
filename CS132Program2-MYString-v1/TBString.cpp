@@ -1,49 +1,60 @@
 #include "TBString.h"
 
-TBString::TBString() {
+TBString::TBString() 
+{
 	cap = 20;
 	end = 0;
 	str = new char[cap];
 	str[end] = '\0';
 }
 
-TBString::TBString(const char* cstr) {
+TBString::TBString(const char* cstr) 
+{
 	for (end = 0; cstr[end] != '\0'; ++end);
 	//empty loop
 
 	cap = 20;						//TODO: needs to potentially grow for prog3
 	str = new char[cap];
 
-	for (int i = 0; i <= end; ++i) {
+	for (int i = 0; i <= end; ++i) 
+	{
 		str[i] = cstr[i];
 	}
 }
 
-int TBString::length() {
+int TBString::length() 
+{
 	return end;
 }
 
-int TBString::capacity() {
+int TBString::capacity() 
+{
 	return cap;
 }
 
-char TBString::at(int index) {
-	if (index >= 0 && index < end) {
+char TBString::at(int index) 
+{
+	if (index >= 0 && index < end) 
+	{
 		return str[index];
 	}
-	else {
+	else 
+	{
 		return '\0';
 	}
 }
 
-bool TBString::read(istream& inputStrm) {
+bool TBString::read(istream& inputStrm) 
+{
 	char inputWord[100];
-	if (inputStrm >> inputWord) {
+	if (inputStrm >> inputWord) 
+	{
 		for (end = 0; inputWord[end] != '\0'; ++end);  			//empty loop
 
 		// cap = ??;						//TODO: needs to potentially grow for prog3
 
-		for (int i = 0; i <= end; ++i) {
+		for (int i = 0; i <= end; ++i) 
+		{
 			str[i] = inputWord[i];
 		}
 		return true;
@@ -52,36 +63,43 @@ bool TBString::read(istream& inputStrm) {
 		return false;
 }
 
-void TBString::write(ostream& outputStrm) {
+void TBString::write(ostream& outputStrm) 
+{
 	outputStrm << str;
 }
 
-bool TBString::lessThan(const TBString& argStr) {
+bool TBString::lessThan(const TBString& argStr) 
+{
 	// TODO: you need to write.
 	return false;
 }
 
-bool TBString::greaterThan(const TBString& argStr) {
+bool TBString::greaterThan(const TBString& argStr) 
+{
 	//TODO: you need to write.
 	return false;
 }
 
-bool TBString::equals(const TBString& argStr) {
+bool TBString::equals(const TBString& argStr) 
+{
 	//TODO: you need to write.
 	return false;
 }
 
 
-void TBString::setEqualTo(const TBString& argStr) {
+void TBString::setEqualTo(const TBString& argStr) 
+{
 	end = argStr.end;
 
 	// cap = ??;						//TODO: needs to potentially grow for prog3
 
-	for (int i = 0; i <= end; ++i) {
+	for (int i = 0; i <= end; ++i) 
+	{
 		str[i] = argStr.str[i];
 	}
 }
 
-const char* TBString::c_str() {
+const char* TBString::c_str() 
+{
 	return str;
 }
