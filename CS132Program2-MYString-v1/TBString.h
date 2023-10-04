@@ -28,21 +28,42 @@ public:
 	const char* c_str();
 
 private:
-	int compareTo(const char* lstr, const char* rstr)
-	{
-		if (lstr < rstr)
-		{
-			return -1;
-		}
-		else if (lstr > rstr)
-		{
-			return 1;
-		}
-		else
-		{
-			return 0;
-		}
-	}
+    int length(const char* str)
+    {
+        int len;
+        for (len = 0; str[len] != '\0'; len++) {}
+        return len;
+    }
+
+    int compareTo(const char* lstr, const char* rstr)
+    {
+        while (*lstr != '\0' && *rstr != '\0')
+        {
+            if (*lstr < *rstr)
+            {
+                return -1;
+            }
+            else if (*lstr > *rstr)
+            {
+                return 1;
+            }
+            lstr++;
+            rstr++;
+        }
+        if (length(lstr) < length(rstr))
+        {
+            return -1;
+        }
+        else if (length(lstr) > length(rstr))
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
 	char* str;
 	int end;
 	int cap;
