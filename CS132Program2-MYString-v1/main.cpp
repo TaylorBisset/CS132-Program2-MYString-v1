@@ -3,8 +3,7 @@
 // Section:         A
 // Program Name:    TBString Tester 
 //
-// Description:     Sort strings form smallest to largest 
-//                  according to ASCII encoding. 
+// Description:     Sort strings in alphabetical order. 
 ////
 
 // main.cpp
@@ -86,19 +85,19 @@ int main()
 
 Output to console:
 
-brain        myself       within       what         felt         thing
-to           seemed       began        they         could        a
-was          I            sit          ruling,      much         amazingly
-as           a            man's        I            impossible.  ask
-busy.        They         intelligent  they         Were         Such
-Or           a            mechanisms?  Martian      each,        directing,
-be.          using,       did          in           ask          sits
-myself       machines,    first        an           engine       and
-to           compare      the          to           life         ironclad
-time         steam        would        lower        the          my
-an           intelligent  body?        began        for          or
-I            seem         rules        how          to           a
-his          human        things       in           to           animal.
+I            I            I            Martian      Or           Such
+They         Were         a            a            a            a
+amazingly    an           an           and          animal.      as
+ask          ask          be.          began        began        body?
+brain        busy.        compare      could        did          directing,
+each,        engine       felt         first        for          his
+how          human        impossible.  in           in           intelligent
+intelligent  ironclad     life         lower        machines,    man's
+mechanisms?  much         my           myself       myself       or
+rules        ruling,      seem         seemed       sit          sits
+steam        the          the          they         they         thing
+things       time         to           to           to           to
+to           using,       was          what         within       would
 
 Press any key to continue . . .
 
